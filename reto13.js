@@ -1,5 +1,5 @@
-function findMax(number){
-    return Math.max(...number)
+function findMax(number) {
+  return Math.max(...number);
 }
 
 console.log(findMax([3, 9, 1, 4, 7])); // 9
