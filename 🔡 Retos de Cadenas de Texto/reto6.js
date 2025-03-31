@@ -1,9 +1,3 @@
-// Contar ocurrencias de palabras
-// 📌 Descripción:
-// Dado un array de palabras, devuelve un objeto donde las claves son las palabras y los valores son la cantidad de veces que aparecen en el array.
-
-
-//Primera  diferente logica mismo resultado
 function countWords(words) {
   let wordCount = {};
 
@@ -19,7 +13,6 @@ function countWords(words) {
   return wordCount;
 }
 
-// Segunda diferete logica mismo resultado
 function countWords(words) {
   return words.reduce((wordCount, word) => {
     wordCount[word] = (wordCount[word] || 0) + 1;
@@ -34,5 +27,3 @@ console.log(
 
 console.log(countWords(["sol", "luna", "sol", "sol", "estrella"]));
 // { sol: 3, luna: 1, estrella: 1 }
-
-
